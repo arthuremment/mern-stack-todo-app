@@ -1,0 +1,102 @@
+* {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 10px;
+  }
+
+  .undone{  
+    width: 40%;
+    background-color: gainsboro;
+    margin-right: 10px;
+    padding: 10px;
+    gap: 2px;
+  }
+
+  .undone div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+  }
+
+  .title{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 15px;
+  }
+
+  .input{
+    outline: none;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: large;
+    width: 100%;
+  }
+
+  .undone .list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+  }
+
+  .undone .list ul li{
+    cursor: pointer;
+    font-size: large;
+    text-transform: capitalize;
+  }
+
+  .left{
+    background-color: black;
+    color: white;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: large;
+  }
+
+  .left p::first-letter{
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  .done{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+  }
+
+  .done label{
+    color: lightslategray;
+    text-decoration: line-through;
+  }
+
+  .done button{
+    position: fixed;
+    right: 200px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  nav{
+    background-color: black;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 15px;
+  }
